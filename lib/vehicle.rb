@@ -1,7 +1,15 @@
 class Vehicle
-
+  attr_reader :wheel_size, :wheel_number
   def initialize(wheel, number)
     @wheel_size = wheel
-    @number = number
+    @wheel_number = number
+  end
+
+  def go
+    'vrrrrrrrooom!'
+  end
+
+  def fill_up_tank
+    "filling up!"
   end
 end
